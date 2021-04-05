@@ -71,7 +71,7 @@ function Cart(props){
           <TableRow>
             <TableCell />
             <TableCell rowSpan={3}>Total</TableCell>
-            <TableCell colspan={3} align="right"><b>{cart.reduce((x, y) => x + (y.quantity * y.price), 0).toFixed(2)}</b></TableCell>
+            <TableCell colspan={3} align="right"><b>${cart.reduce((x, y) => x + (y.quantity * y.price), 0).toFixed(2)}</b></TableCell>
           </TableRow>
         </TableBody>
       </Table>
